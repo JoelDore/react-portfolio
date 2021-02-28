@@ -4,17 +4,19 @@ import Landing from "./pages/Landing";
 import Story from "./pages/Story";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
-import Nav from "./components/Nav";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
       <Router>
-        <Nav />
+        <Header />
         <Route exact path="/" component={Landing} />
         <Route exact path="/story" component={Story} />
         <Route exact path="/portfolio" component={Portfolio} />
         <Route exact path="/contact" component={Contact} />
+        <Footer />
       </Router>
     </>
   );
