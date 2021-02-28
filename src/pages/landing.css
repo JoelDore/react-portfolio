@@ -1,0 +1,17 @@
+.landing-wrapper {
+    background-size: cover;
+    background-position: left;
+}
+
+h1 {
+    position: absolute;
+    top: 47%;
+    left: 25%;
+    font-size: 2rem;
+}
+h2 {
+    position: absolute;
+    top: 58%;
+    left: 28%;
+    font-size: 1.25rem;
+}
