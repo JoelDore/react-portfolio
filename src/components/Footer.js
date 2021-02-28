@@ -8,7 +8,7 @@ import githubImg from '../assets/images/github-white.svg'
 
 const Footer = () => {
     return (
-        <div className="footer w-100 fixed-bottom py-3 text-center">
+        <div className="footer p-3 text-center">
             <Row>
                 <Col>
                     <a href="mailto:dore.joel.dore@gmail.com" target="_blank" rel="noreferrer">dore.joel.dore@gmail.com</a>
