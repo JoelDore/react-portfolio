@@ -1,9 +1,18 @@
 import React from 'react'
+import SectionTitle from "../components/SectionTitle";
+import PortfolioGrid from "../components/PortfolioGrid";
+import ProjectModal from "../components/ProjectModal";
+import projectData from '../utils/project-data'
+import ProjectDataContext from '../contexts/ProjectDataContext'
 
 export default function Portfolio() {
     return (
-        <div>
-
-        </div>
+        <ProjectDataContext.Provider value={projectData}>
+            <section className="Portfolio">
+                <SectionTitle title="Portfolio"></SectionTitle>
+                <PortfolioGrid />
+                <ProjectModal />
+            </section>
+        </ProjectDataContext.Provider>
     )
 }
