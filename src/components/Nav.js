@@ -6,7 +6,7 @@ export default function Nav() {
 
     return (
         <BootNav className="ms-auto my-2 mb-md-0 px-3 text-end">
-            <Link to="/" className={`${location.pathname === "/" ? "nav-link active" : "nav-link"} nav-item`}>
+            <Link to="/" className={`${location.pathname === "/" ? "nav-link active" : "nav-link"}`}>
                 Home
             </Link>
             <Link
