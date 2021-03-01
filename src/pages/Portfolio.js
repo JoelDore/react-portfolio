@@ -8,7 +8,7 @@ import ProjectDataContext from '../contexts/ProjectDataContext'
 export default function Portfolio() {
     return (
         <ProjectDataContext.Provider value={projectData}>
-            <section className="Portfolio">
+            <section className="Portfolio py-5 px-3 px-sm-5">
                 <SectionTitle title="Portfolio"></SectionTitle>
                 <PortfolioGrid />
                 <ProjectModal />

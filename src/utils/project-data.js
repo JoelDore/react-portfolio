@@ -1,14 +1,14 @@
 const projects = [
   {
-    name: "Remote Education Resource",
-    description: "Website helping parents navigate remote education in the age of COVID-19",
-    imageSrc: "https://raw.githubusercontent.com/joeldore/Remote-Ed-Resource/main/Images/demo.png",
-    techs: ["HTML", "MD Bootstrap", "jQuery", "Ed Data API", "Youtube API", "GitHub"],
-    summary: `Managed git branching and agile workflow on a team of four.
-    Identifying useful APIs can be a challenge; learned to do proper research before committing to a concept/design.`,
-    github: "https://github.com/joeldore/Remote-Ed-Resource/",
-    deployed: "https://joeldore.github.io/Remote-Ed-Resource/"
+    name: "GymBuddy",
+    description: "Create, view and track daily workout routines to help reach your fitness goals more quickly",
+    imageSrc: "https://raw.githubusercontent.com/JoelDore/gym-buddy/main/public/assets/screenshot-stats.png",
+    techs: ["Express", "Chart.js", "Mongoose/MongoDB", "Heroku"],
+    summary: `Created Mongo database with Mongoose schema, handled routes with Express, refactored frontend code for more intuitive UI and corrected errors in data visualization logic`,
+    github: "https://github.com/joeldore/gym-buddy/",
+    deployed: "https://jd-gymbuddy.herokuapp.com/"
   },
+
   {
     name: "Employee Directory",
     description: "React app allowing a manager to access, sort and filter non-sensitive employee information",
@@ -18,6 +18,16 @@ const projects = [
     Downloadable as Mobile/Desktop Progressive Web App.`,
     github: "https://github.com/JoelDore/employee-directory",
     deployed: "https://joeldore.github.io/employee-directory/"
+  },
+  {
+    name: "JavaScript Quiz",
+    description: "Timed quiz on JavaScript fundamentals that stores high scores client-side",
+    imageSrc: "https://raw.githubusercontent.com/JoelDore/Code-Quiz/main/Assets/Images/demo.gif",
+    techs: ["HTML", "CSS", "JavaScript", "GitHub"],
+    summary: `One of my first projects, built with pure CSS and JS.
+    Learned and implemented 'Fisher-Yates shuffle' algorithm for better randomized order of questions/answers.`,
+    github: "https://github.com/joeldore/Code-Quiz/",
+    deployed: "https://joeldore.github.io/Code-Quiz/"
   },
   {
     name: "Recipe-EZ",
@@ -40,23 +50,14 @@ const projects = [
     deployed: ""
   },
   {
-    name: "JavaScript Quiz",
-    description: "Timed quiz on JavaScript fundamentals that stores high scores client-side",
-    imageSrc: "https://raw.githubusercontent.com/JoelDore/Code-Quiz/main/Assets/Images/demo.gif",
-    techs: ["HTML", "CSS", "JavaScript", "GitHub"],
-    summary: `One of my first projects, built with pure CSS and JS.
-    Learned and implemented 'Fisher-Yates shuffle' algorithm for better randomized order of questions/answers.`,
-    github: "https://github.com/joeldore/Code-Quiz/",
-    deployed: "https://joeldore.github.io/Code-Quiz/"
-  },
-  {
-    name: "GymBuddy",
-    description: "Create, view and track daily workout routines to help reach your fitness goals more quickly",
-    imageSrc: "https://raw.githubusercontent.com/JoelDore/gym-buddy/main/public/assets/screenshot-stats.png",
-    techs: ["Express", "Chart.js", "Mongoose/MongoDB", "Heroku"],
-    summary: `Created Mongo database with Mongoose schema, handled routes with Express, refactored frontend code for more intuitive UI and corrected errors in data visualization logic`,
-    github: "https://github.com/joeldore/gym-buddy/",
-    deployed: "https://jd-gymbuddy.herokuapp.com/"
+    name: "Remote Education Resource",
+    description: "Website helping parents navigate remote education in the age of COVID-19",
+    imageSrc: "https://raw.githubusercontent.com/joeldore/Remote-Ed-Resource/main/Images/demo.png",
+    techs: ["HTML", "MD Bootstrap", "jQuery", "Ed Data API", "Youtube API", "GitHub"],
+    summary: `Managed git branching and agile workflow on a team of four.
+    Identifying useful APIs can be a challenge; learned to do proper research before committing to a concept/design.`,
+    github: "https://github.com/joeldore/Remote-Ed-Resource/",
+    deployed: "https://joeldore.github.io/Remote-Ed-Resource/"
   },
 ]
 

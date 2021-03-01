@@ -1,0 +1,39 @@
+.project-preview {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    min-height: 15rem;
+    transition: all 300ms ease-in;
+    color: var(--bg-dark);
+}
+.project-preview:hover {
+    transform: scale(1.05);
+    z-index: 1;
+    box-shadow: 2px 2px 5px;
+}
+
+.overlay {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top:0; left:0;
+    background-color: rgb(var(--gray-csv), 0.6);
+    width: inherit;
+    height: inherit;
+    padding: .5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.overlay:hover {
+    animation: fadeout 300ms forwards;
+}
+  
+@keyframes fadeout {
+    to {        
+        opacity: 0;
+        cursor: pointer;
+        user-select: none;
+    }
+}

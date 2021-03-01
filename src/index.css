@@ -25,3 +25,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.Portfolio {
+  background: radial-gradient(var(--bg-dark), black);
+}
+/* .Techs {
+  background: radial-gradient(var(--bg-dark), black);
+}
+.Story {
+  background: radial-gradient(var(--bg-dark), black);
+}
+.Contact {
+  background: radial-gradient(var(--bg-dark), black);
+} */
+
+section{
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+}
