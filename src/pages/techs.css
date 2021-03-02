@@ -1,0 +1,15 @@
+.wrapper {
+    display: grid;
+    place-items: center;
+}
+
+.Techs .btn {
+    height: 5rem;
+    pointer-events: none;
+    max-width: 25vw;
+}
+
+.Techs .mern::first-letter {
+    font-size: larger;
+    font-weight: bolder;
+}
