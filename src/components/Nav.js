@@ -20,8 +20,8 @@ export default function Nav() {
                 Portfolio
             </Link>
             <Link
-                to="/tech"
-                className={location.pathname === "/tech" ? "nav-link active" : "nav-link"}>
+                to="/skills"
+                className={location.pathname === "/skills" ? "nav-link active" : "nav-link"}>
                 Tech Skills
             </Link>
             <Link

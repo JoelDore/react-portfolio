@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Landing from "./pages/Landing";
 import Story from "./pages/Story";
 import Portfolio from "./pages/Portfolio";
+import Techs from "./pages/Techs";
 import Contact from "./pages/Contact";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -14,6 +15,7 @@ function App() {
       <Route exact path="/" component={Landing} />
       <Route exact path="/story" component={Story} />
       <Route exact path="/portfolio" component={Portfolio} />
+      <Route exact path="/skills" component={Techs} />
       <Route exact path="/contact" component={Contact} />
       {window.location.pathname !== "/" && <Footer />}
     </Router>

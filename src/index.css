@@ -29,13 +29,13 @@ code {
 .Portfolio {
   background: radial-gradient(var(--bg-dark), black);
 }
-/* .Techs {
-  background: radial-gradient(var(--bg-dark), black);
+.Techs {
+  background: radial-gradient(var(--bg-violet), black);
 }
-.Story {
+/* .Story {
   background: radial-gradient(var(--bg-dark), black);
-}
-.Contact {
+} */
+/* .Contact {
   background: radial-gradient(var(--bg-dark), black);
 } */
 
