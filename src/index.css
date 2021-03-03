@@ -35,9 +35,9 @@ code {
 /* .Story {
   background: radial-gradient(var(--bg-dark), black);
 } */
-/* .Contact {
-  background: radial-gradient(var(--bg-dark), black);
-} */
+.Contact {
+  background: radial-gradient(var(--bg-green), black);
+}
 
 section{
   min-height: 100vh;
