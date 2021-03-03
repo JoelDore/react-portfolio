@@ -8,7 +8,13 @@ export default function Nav() {
 
     return (
         <BootNav className="ms-auto my-2 mb-md-0 px-3 text-end">
-            <Link to="/" className={`${location.pathname === "/" ? "nav-link active" : "nav-link"}`}>
+            <Link
+                to="/"
+                className={
+                    `${location.pathname === "/" || location.pathname === "/react-portfolio"
+                        ? "nav-link active"
+                        : "nav-link"}`
+                }>
                 Home
             </Link>
             <Link

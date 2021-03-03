@@ -8,7 +8,12 @@ import './header.css'
 const Header = () => {
     const location = useLocation()
     return (
-        <Navbar fixed="top" expand="sm" variant={location.pathname === "/" ? "light" : "dark"} bg="transparent">
+        <Navbar
+            fixed="top"
+            expand="sm"
+            variant={location.pathname === "/" || location.pathname === "/react-portfolio" ? "light" : "dark"}
+            bg="transparent"
+        >
             <Container fluid>
                 <Navbar.Brand as="div">
                     <img
