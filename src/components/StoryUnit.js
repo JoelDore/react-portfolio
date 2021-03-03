@@ -5,7 +5,7 @@ export default function StoryUnit({ problem, solution }) {
     return (
         <>
             <div className="problem">{problem}</div>
-            <FaLongArrowAltRight />
+            <FaLongArrowAltRight className="icon" />
             <div className="solution">{solution}</div>
         </>
     )

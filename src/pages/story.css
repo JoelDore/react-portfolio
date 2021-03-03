@@ -1,0 +1,42 @@
+.Story {
+    background: radial-gradient(var(--bg-blue), black);
+    
+}
+
+.story-grid {
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+    grid-template-columns: 5fr 1fr 5fr;
+}
+
+.problem, .solution {
+    width: 100%;
+    max-width: 20rem;
+    height: fit-content;
+    font-size: .9rem;
+    font-weight: bold;
+    padding: 1rem;
+    display: grid;
+    place-items: center;
+    color: var(--bg-dark);
+    border-radius: 1rem;
+}
+
+.icon {
+    font-size: 3rem;
+}
+.problem {
+    background-color: var(--problem);
+    margin-left: auto;
+}
+.solution {
+    background-color: var(--solution);
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .problem, .solution {
+        font-size: .8rem;
+    }
+}

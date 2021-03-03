@@ -32,9 +32,6 @@ code {
 .Techs {
   background: radial-gradient(var(--bg-violet), black);
 }
-/* .Story {
-  background: radial-gradient(var(--bg-dark), black);
-} */
 .Contact {
   background: radial-gradient(var(--bg-green), black);
 }
