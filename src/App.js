@@ -13,7 +13,7 @@ function App() {
     <Router>
       <Header />
       <Switch>
-        <Route exact path="/" component={Landing} />
+        <Route exact path={["/", "/react-portfolio"]} component={Landing} />
         <Route exact path="/story" render={() => (
           <>
             <Story />
