@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import BootNav from 'react-bootstrap/Nav'
+import BootNav from 'react-bootstrap/Nav';
+import resume from '../assets/Resume.pdf'
+
 export default function Nav() {
     const location = useLocation();
 
@@ -29,6 +31,9 @@ export default function Nav() {
                 className={location.pathname === "/contact" ? "nav-link active" : "nav-link"}>
                 Contact
             </Link>
+            <a href={resume} target="_blank" rel="noreferrer" className={"nav-link"} onClick={(e) => e.target.blur()}>
+                Resume
+            </a>
         </BootNav >
     );
 }
