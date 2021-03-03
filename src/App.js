@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Landing from "./pages/Landing";
 import Story from "./pages/Story";
 import Portfolio from "./pages/Portfolio";
@@ -12,12 +12,33 @@ function App() {
   return (
     <Router>
       <Header />
-      <Route exact path="/" component={Landing} />
-      <Route exact path="/story" component={Story} />
-      <Route exact path="/portfolio" component={Portfolio} />
-      <Route exact path="/skills" component={Techs} />
-      <Route exact path="/contact" component={Contact} />
-      {window.location.pathname !== "/" && <Footer />}
+      <Switch>
+        <Route exact path="/" component={Landing} />
+        <Route exact path="/story" render={() => (
+          <>
+            <Story />
+            <Footer />
+          </>
+        )} />
+        <Route exact path="/portfolio" render={() => (
+          <>
+            <Portfolio />
+            <Footer />
+          </>
+        )} />
+        <Route exact path="/skills" render={() => (
+          <>
+            <Techs />
+            <Footer />
+          </>
+        )} />
+        <Route exact path="/contact" render={() => (
+          <>
+            <Contact />
+            <Footer />
+          </>
+        )} />
+      </Switch>
     </Router>
   );
 }
