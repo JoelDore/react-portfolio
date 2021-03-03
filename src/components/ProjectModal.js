@@ -9,7 +9,7 @@ export default function ProjectModal({ show, handleClose, data }) {
 
     return (
         <Modal centered={true} show={show} onHide={handleClose}>
-            <Modal.Header className="p-0 align-items-start">
+            <Modal.Header className="bg-dark p-0 align-items-start">
                 {isWebm ? (
                     <video
                         src={data.imageSrc}
