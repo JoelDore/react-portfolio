@@ -1,14 +1,13 @@
 const projects = [
   {
-    name: "GymBuddy",
-    description: "Create, view and track daily workout routines to help reach your fitness goals more quickly",
-    imageSrc: "https://raw.githubusercontent.com/JoelDore/gym-buddy/main/public/assets/screenshot-stats.png",
-    techs: ["Express", "Chart.js", "Mongoose/MongoDB", "Heroku"],
-    summary: `Created Mongo database with Mongoose schema, handled routes with Express, refactored frontend code for more intuitive UI and corrected errors in data visualization logic`,
-    github: "https://github.com/joeldore/gym-buddy/",
-    deployed: "https://jd-gymbuddy.herokuapp.com/"
+    name: "Googreads",
+    description: "React-based app allowing user to search Google Books and save books to review or purchase later",
+    imageSrc: "https://raw.githubusercontent.com/JoelDore/goog-reads/main/client/public/assets/images/screenshot-desktop.png",
+    techs: ["Mongoose/MongoDB", "Express", "React", "Google Books API", "react-bootstrap", "Heroku"],
+    summary: `Designed and built MERN stack app from scratch, and implemented pagination to display search results more conveniently to the user.`,
+    github: "https://github.com/joeldore/goog-reads/",
+    deployed: "https://goog-reads.herokuapp.com/"
   },
-
   {
     name: "Employee Directory",
     description: "React app allowing a manager to access, sort and filter non-sensitive employee information",
@@ -18,6 +17,15 @@ const projects = [
     Downloadable as Mobile/Desktop Progressive Web App.`,
     github: "https://github.com/JoelDore/employee-directory",
     deployed: "https://joeldore.github.io/employee-directory/"
+  },
+  {
+    name: "GymBuddy",
+    description: "Create, view and track daily workout routines to help reach your fitness goals more quickly",
+    imageSrc: "https://raw.githubusercontent.com/JoelDore/gym-buddy/main/public/assets/screenshot-stats.png",
+    techs: ["Express", "Chart.js", "Mongoose/MongoDB", "Heroku"],
+    summary: `Created Mongo database with Mongoose schema, handled routes with Express, refactored frontend code for more intuitive UI and corrected errors in data visualization logic`,
+    github: "https://github.com/joeldore/gym-buddy/",
+    deployed: "https://jd-gymbuddy.herokuapp.com/"
   },
   {
     name: "JavaScript Quiz",
