@@ -8,6 +8,15 @@ export default function Nav() {
 
     return (
         <BootNav className="ms-auto my-2 mb-md-0 px-3 text-end">
+
+            {/* Color Picker for nav bg */}
+
+            <div className="m-2 d-flex align-center" style={{ width: "3rem" }}>
+                🌈<input type="color" defaultValue="#1169bc" className="p-0" style={{ clipPath: "circle(41%)" }} />
+            </div>
+
+            {/***************************/}
+
             <Link
                 to="/"
                 className={
