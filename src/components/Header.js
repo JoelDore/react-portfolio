@@ -33,7 +33,7 @@ const Header = () => {
                     />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navLinks" />
-                <Navbar.Collapse id="navLinks" className="h-100">
+                <Navbar.Collapse id="navLinks">
                     <Nav handleColorChange={handleColorChange} />
                 </Navbar.Collapse>
             </Container>
