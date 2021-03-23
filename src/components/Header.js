@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import Nav from './Nav'
 import { Container, Navbar } from 'react-bootstrap'
@@ -7,12 +7,20 @@ import './header.css'
 
 const Header = () => {
     const location = useLocation()
+
+    const [color, setColor] = useState("transparent")
+
+    const handleColorChange = (e) => {
+        setColor(e.target.value)
+        console.log("%c" + e.target.value, "color:orange")
+    }
+
     return (
         <Navbar
             fixed="top"
             expand="sm"
             variant={location.pathname === "/" || location.pathname === "/react-portfolio" ? "light" : "dark"}
-            bg="transparent"
+            style={{ backgroundColor: color }}
         >
             <Container fluid>
                 <Navbar.Brand as="div">
@@ -26,7 +34,7 @@ const Header = () => {
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navLinks" />
                 <Navbar.Collapse id="navLinks">
-                    <Nav />
+                    <Nav handleColorChange={handleColorChange} />
                 </Navbar.Collapse>
             </Container>
         </Navbar>

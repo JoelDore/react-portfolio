@@ -3,11 +3,23 @@ import { Link, useLocation } from "react-router-dom";
 import BootNav from 'react-bootstrap/Nav';
 import resume from '../assets/Resume.pdf'
 
-export default function Nav() {
+export default function Nav({ handleColorChange }) {
     const location = useLocation();
 
     return (
-        <BootNav className="ms-auto my-2 mb-md-0 px-3 text-end">
+        <BootNav className="ms-auto my-2 my-md-0 px-3 text-end">
+
+            {/* Color Picker */}
+            <div className="m-2 d-flex align-center" style={{ width: "3rem" }}>
+                🌈
+                <input
+                    type="color"
+                    defaultValue="#1169bc"
+                    className="p-0"
+                    style={{ clipPath: "circle(41%)" }}
+                    onChange={handleColorChange}
+                />
+            </div>
             <Link
                 to="/"
                 className={
