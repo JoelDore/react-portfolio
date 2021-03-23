@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import Nav from './Nav'
 import { Container, Navbar } from 'react-bootstrap'
@@ -7,19 +7,36 @@ import './header.css'
 
 const Header = () => {
     const location = useLocation()
+    const defaultNavTheme = location.pathname === "/" || location.pathname === "/react-portfolio" ? "light" : "dark"
 
     const [color, setColor] = useState("transparent")
+    const [navTheme, setNavTheme] = useState(defaultNavTheme)
+
+    useEffect(() => {
+        if (color === 'transparent') return
+
+        // convert hex value to rgb as [r, g, b]
+        const rgb = color.split("#")[1].match(/(..?)/g).map(hh => parseInt(hh, 16))
+
+        // http://www.w3.org/TR/AERT#color-contrast
+        const brightness = Math.round((
+            (parseInt(rgb[0]) * 299) + (parseInt(rgb[1]) * 587) + (parseInt(rgb[2]) * 114)
+        ) / 1000);
+
+        // update nav theme based on nav color
+        const newNavTheme = (brightness > 125) ? 'light' : 'dark';
+        setNavTheme(newNavTheme)
+    }, [color])
 
     const handleColorChange = (e) => {
         setColor(e.target.value)
-        console.log("%c" + e.target.value, "color:orange")
     }
 
     return (
         <Navbar
             fixed="top"
             expand="sm"
-            variant={location.pathname === "/" || location.pathname === "/react-portfolio" ? "light" : "dark"}
+            variant={navTheme}
             style={{ backgroundColor: color }}
         >
             <Container fluid>
