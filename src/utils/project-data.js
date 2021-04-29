@@ -62,10 +62,10 @@ const projects = [
   {
     name: "Employee Management System",
     description: "Command line application for viewing/managing departments, roles and employees in your company",
-    imageSrc: "https://raw.githubusercontent.com/JoelDore/Employee-Management-System/main/assets/demo.gif",
+    imageSrc: "https://raw.githubusercontent.com/JoelDore/node-ems/main/assets/demo.gif",
     techs: ["JavaScript", "Inquirer.js", "MySQL", "CLI"],
     summary: `An easy-to-use command line interface abstracts away MySQL database management so any employer can use with minimal technical experience.`,
-    github: "https://github.com/JoelDore/Employee-Management-System#Installation",
+    github: "https://github.com/JoelDore/node-ems#Installation",
     deployed: ""
   },
   {
